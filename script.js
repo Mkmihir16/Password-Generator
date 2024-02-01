@@ -3,7 +3,7 @@ let uppercase="ABCDEFGHIJKLMNOPQRSTUVWXYS";
 let lowercase="abcdefghijklmnopqrstuvwxyz";
 let number="1234567890";
 let length=12;
-let specialchar="!@#$%^&*()_+-={}[]|\:;'<>,.?";
+let specialchar="!@#$%^&*()_+-={}";
 function passsword(){
     let password="";
 password+=uppercase[Math.floor(Math.random()*uppercase.length)];
@@ -20,8 +20,12 @@ pass.value=password;
 console.log(pass.value)
 }
 function fun(){
+    document.querySelector("p").classList.add("add");
     // window.clipboard.writeText(pass.value);
     navigator.clipboard.writeText(pass.value);
     console.log(navigator.clipboard.writeText(pass.value));
+    setTimeout(()=>{
+        document.querySelector("p").classList.remove("add");
+    },3000)
     // alert("Password Copied");
 }

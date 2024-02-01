@@ -3,49 +3,73 @@
     padding: 0;
     margin: 0;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 body{
     height: 100vh;
-    background-image: linear-gradient(to right top, #05b74e, #00b389, #00aab6, #009dcd, #008ccb, #2290cc, #3393ce, #4097cf, #42afdb, #55c7e3, #73dee8, #96f4ed);
+    /* background-image: linear-gradient(to right top, #e181f0, #dd86eb, #d98be5, #d490e0, #d094da); */
+    background-image: linear-gradient(to right top, #000000, #121212, #1d1d1d, #282828, #333333);
 }
 h1{
-    font-size: 5vw;
-    
+    font-size: 3vw;
+    padding: 2rem;
+    color: white;
 }
 h1 span{
-    background: linear-gradient(to right,blue,red);
+    background:linear-gradient(to right top, #6829cd, #7c26cf, #8f21d1, #a11bd3, #b212d4);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip:text ;
 }
 .inputs{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(128, 14, 14);
-    height: 10vh;
-    width: 100%;
+    align-items: center; */
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: max-content;
+    margin: 1.5rem;
+    border-radius: 10px;
 }
 .inputs img{
-    height: 5vh;
-    width:4vw;
+    /* height: 6vh;
+    width:3.5vw; */
+    height: 3.5vh;
+    width: 2vw;
     cursor: pointer;
+    margin: 0 10px;
 }
 .inputs input{
+    border: none;
+    outline: none;
     height: 8vh;
     width: 50vw;
-    font-size: 3vw;
+    font-size: 2.2vw;
     font-family: 'Times New Roman', Times, serif;
     background-color: white;
     outline: none;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 5px;
     padding: 10px;
 }
 .btns{
-   
-    font-size: 3vw;
+   margin: 2rem;
+    font-size: 2vw;
     padding: 10px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    color: white;
+    background: linear-gradient(to right top, #6829cd, #7c26cf, #8f21d1, #a11bd3, #b212d4);
+}
+p{
+    display: none;
+}
+
+.add{
+   display: block;
+    width: 24%;
+    color:white;
+    text-align: center;
+    position: relative;
+    top:-20px;
 }
